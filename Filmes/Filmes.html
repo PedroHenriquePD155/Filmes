@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .gallery img {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Filmes Favoritos</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="https://pt.wikipedia.org/wiki/A_Origem" target="_blank">
+                <img src="img/A-Origem.jpg" alt="A Origem">
+            </a>
+            <a href="https://pt.wikipedia.org/wiki/Shutter_Island" target="_blank">
+                <img src="img/ILHA-DO-MEDO.jpg" alt="Ilha do Medo">
+            </a>
+            <a href="https://pt.wikipedia.org/wiki/Cast_Away" target="_blank">
+                <img src="img/naufrago.jpg" alt="Náufrago">
+            </a>
+            <a href="https://pt.wikipedia.org/wiki/O_Lobo_de_Wall_Street" target="_blank">
+                <img src="img/lobo-wall.jpg" alt="O Lobo de Wall Street">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/The_Revenant_(2015_film)" target="_blank">
+                <img src="img/The_Revenant.jpg" alt="The Revenant">
+            </a>
+            <a href="https://pt.wikipedia.org/wiki/Django_Unchained" target="_blank">
+                <img src="img/django.jpg" alt="Django Livre">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galeria de Filmes Favoritos</p>
+    </footer>
+</body>
+</html>
